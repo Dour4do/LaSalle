@@ -21,3 +21,5 @@ elif d0 == 5:
     print('This date corresponds to a Friday')
 elif d0 == 6:
     print('This date corresponds to a Saturday')
+else:
+    print('ERROR')

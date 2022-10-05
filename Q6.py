@@ -1,5 +1,4 @@
-txt = input('Write something: ')
-aux = 0
+txt = input('Write a character: ')
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', \
             'g', 'h', 'i', 'j', 'k', 'l', \
             'm', 'n', 'o', 'p', 'q', 'r', \
@@ -14,12 +13,11 @@ digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 special = ['', '!', '"', '#', '$', '%', '&', '(', ')', \
            '*', '+', ',', '-', '.', '/', ':', ';', '<', \
            '=', '>', '?', '@', '[', ']', '^', '_', '`', \
-           '{', '|', '}', '~']
-print(list in alphabet)
-for aux in range(txt.__len__()):
-    if txt[aux] in alphabet:
-        print(txt[aux], ', is an alphabet')
-    elif txt[aux] in digit:
-        print(txt[aux], ', is a digit')
-    elif txt[aux] in special:
-        print(txt[aux], ', is a special character')
+           '{', '|', '}', '~', "'"]
+
+if txt in alphabet:
+    print(txt, ', is an alphabet')
+elif txt in digit:
+        print(txt, ', is a digit')
+elif txt in special:
+        print(txt, ', is a special character')
